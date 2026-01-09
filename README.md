@@ -53,7 +53,9 @@ cd ecommerce-nextjs
 ```
 
 2. **Install dependencies**
+```
 npm install
+```
 
 3. **Setup environment variables**
 
@@ -72,10 +74,11 @@ SENDER_EMAIL=onboarding@resend.dev
 
 Replace the placeholders with your actual keys.
 
-⚡ Running Locally
-Start the development server
-npm run dev
+⚡ Running Locally - Start the development server
 
+```
+npm run dev
+```
 
 Visit http://localhost:3000
  to see the site.
@@ -83,9 +86,10 @@ Visit http://localhost:3000
 Admin dashboard available at /admin.
 
 Stripe webhooks (for local testing)
+```
 stripe login
 stripe listen --forward-to localhost:3000/webhooks/stripe
-
+```
 
 All Stripe events (like payments) will be forwarded to your local webhook handler.
 
