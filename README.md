@@ -22,7 +22,7 @@ This platform allows users to browse, purchase, and download digital products wh
 ### Technical Features
 - **Next.js (App Router)** for server-side rendering and API routes.
 - **Tailwind CSS** for modern, responsive styling.
-- **Prisma ORM** for database access (PostgreSQL / SQLite / MySQL).
+- **Prisma ORM** for database access (SQLite).
 - **Stripe API** for secure payment processing.
 - **React Email** for professional transactional emails using Resend.
 - Fully typed with **TypeScript**.
