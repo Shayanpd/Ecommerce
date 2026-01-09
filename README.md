@@ -50,31 +50,43 @@ This platform allows users to browse, purchase, and download digital products wh
 ```bash
 git clone https://github.com/your-username/ecommerce-nextjs.git
 cd ecommerce-nextjs
+```
 
-2. **Install Dependencies:**
+2. **Install dependencies**
+npm install
 
-3. **Set up .env file
+3. **Setup environment variables**
 
-Required variables in .env:
-
-DATABASE_URL ="file:./dev.db"
+Create a .env file in the project root and add:
+```
+DATABASE_URL="file:./dev.db"
 ADMIN_USERNAME=admin
 HASHED_ADMIN_PASSWORD=sQnzu7wkTrgkQZF+0G1hi5AI3Qmzvv0bXgc5THBqi7mAsdd4Xll27ASbRt9fEyavWi6m0QP9B8lThf+rDKy8hg==
-STRIPE_SECRET_KEY=(Set up stripe yourself and get a key)
-
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY=(Set up stripe yourself and get a key)
-
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
-
-STRIPE_WEBHOOK_SECRET=(Set up stripe yourself and get a secret)
-
-RESEND_API_KEY=(set up resend and get a API key)
-
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+RESEND_API_KEY=your_resend_api_key
 SENDER_EMAIL=onboarding@resend.dev
+```
 
-## Running the program
+Replace the placeholders with your actual keys.
 
+⚡ Running Locally
+Start the development server
 npm run dev
 
-stripe listen --forward-to localhost:3000/webhooks/stripe (after logging in with "stripe login")
 
+Visit http://localhost:3000
+ to see the site.
+
+Admin dashboard available at /admin.
+
+Stripe webhooks (for local testing)
+stripe login
+stripe listen --forward-to localhost:3000/webhooks/stripe
+
+
+All Stripe events (like payments) will be forwarded to your local webhook handler.
+
+Ensure STRIPE_WEBHOOK_SECRET matches your Stripe webhook.
