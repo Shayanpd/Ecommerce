@@ -36,7 +36,7 @@ This platform allows users to browse, purchase, and download digital products wh
 |------------------|-----------------------------|
 | Frontend & SSR     | Next.js                     |
 | Styling           | Tailwind CSS                |
-| Database & ORM    | Prisma + PostgreSQL/SQLite  |
+| Database & ORM    | Prisma + SQLite  |
 | Payments          | Stripe                      |
 | Emails            | React Email + Resend        |
 | Language          | TypeScript                  |
