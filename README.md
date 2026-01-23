@@ -79,11 +79,13 @@ Replace the placeholders with your actual keys.
 ```
 npm run dev
 ```
+<img width="1886" height="1026" alt="HomePage" src="https://github.com/user-attachments/assets/9a000436-c3ce-454b-8a54-abbf49068b21" />
 
 Visit http://localhost:3000
  to see the site.
 
 Admin dashboard available at /admin.
+<img width="1592" height="750" alt="AdminPage" src="https://github.com/user-attachments/assets/682e4e66-69fa-4ea9-801b-1429f3f0e668" />
 
 Stripe webhooks (for local testing)
 ```
