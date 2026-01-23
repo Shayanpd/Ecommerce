@@ -97,11 +97,11 @@ Ensure STRIPE_WEBHOOK_SECRET matches your Stripe webhook.
 
 ## Screenshots:
 
-# Homepage
+### Homepage
 
 
 <img width="1886" height="1026" alt="HomePage" src="https://github.com/user-attachments/assets/9a000436-c3ce-454b-8a54-abbf49068b21" /> 
 
-# Admin Dashboard
+### Admin Dashboard
 
 <img width="1592" height="750" alt="AdminPage" src="https://github.com/user-attachments/assets/682e4e66-69fa-4ea9-801b-1429f3f0e668" />
